@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="icon" href="https://cdn.prod.website-files.com/688b2b7e19a28f7d92b11b1b/688b2b7e19a28f7d92b11b4c_Group%208166.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta 광고 운영 기획안</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+        }
+        .slide-container {
+            width: 100%;
+            max-width: 1000px;
+            aspect-ratio: 16 / 9;
+            background: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slide-progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 6px;
+            background-color: #4f46e5;
+            transition: width 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-5xl flex items-center justify-center space-x-4">
+        <!-- Prev Button -->
+        <button id="prevBtn" class="p-3 bg-white rounded-full shadow-lg hover:bg-gray-200 transition-colors disabled:opacity-50">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+
+        <!-- Slide Container -->
+        <div class="slide-container">
+            <!-- Slide 1: Title -->
+            <div class="slide active flex-col items-center justify-center p-12 bg-gray-900 text-white text-center relative">
+                <h1 class="text-5xl font-bold">Meta 광고 운영 기획안</h1>
+                <p class="mt-4 text-xl text-gray-300">2025년 4분기 아마존 세션 확대 전략</p>
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fr7qoy%2FbtsQEdaaOzd%2FAAAAAAAAAAAAAAAAAAAAANZed6tfVuas8hpedRty3RLb7vrANKd3iRRWYA7fUhhs%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1759244399%26allow_ip%3D%26allow_referer%3D%26signature%3Dz7caKiKv%252BKNWgDlOvXK2DkIK55E%253D" alt="클라이언트 로고" class="mt-2 h-16 w-auto">
+                <div class="absolute bottom-12 left-0 right-0 mx-auto text-sm w-full max-w-md border-t border-gray-700 pt-4">
+                    <p><strong>Weekly Meeting</strong> 2025. 9. 18</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Core Strategy -->
+            <div class="slide p-12 items-center relative">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fqnkc7%2FbtsQFbXhMqV%2FAAAAAAAAAAAAAAAAAAAAALGeDH574rS2rF8jp9Z1J32lGcs6mwuRvT2U0ob6ouC3%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1759244399%26allow_ip%3D%26allow_referer%3D%26signature%3DEYJrtPXYaPL56x6pLdLXC1G4Qes%253D" alt="로고" class="absolute top-2 right-2 h-8 w-auto">
+                <div class="w-2/5">
+                    <h2 class="text-3xl font-bold text-gray-800">1. 운영 의도</h2>
+                    <h3 class="mt-2 text-xl font-semibold text-indigo-600">신뢰도 높은 콘텐츠로 유입 극대화</h3>
+                    <p class="mt-6 text-gray-700">
+                        실제 크리에이터가 만든 영상과 파트너십 광고를 통해, 네이티브 콘텐츠처럼 친숙하게 다가가 제품 이해도와 신뢰도를 동시에 높이는 것을 목표로 합니다.
+                    </p>
+                </div>
+                <div class="w-3/5 pl-10 flex items-center justify-center">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-indigo-50 rounded-lg text-center">
+                            <span class="text-4xl">🤝</span>
+                            <h4 class="font-bold mt-2">신뢰도 확보</h4>
+                            <p class="text-sm text-gray-600">실제 사용자 영상 활용</p>
+                        </div>
+                        <div class="p-4 bg-indigo-50 rounded-lg text-center">
+                            <span class="text-4xl">📈</span>
+                            <h4 class="font-bold mt-2">제품 이해도 상승</h4>
+                            <p class="text-sm text-gray-600">자연스러운 사용 후기</p>
+                        </div>
+                        <div class="p-4 bg-indigo-50 rounded-lg text-center">
+                            <span class="text-4xl">💡</span>
+                            <h4 class="font-bold mt-2">친숙함 증대</h4>
+                            <p class="text-sm text-gray-600">파트너십 광고 집행</p>
+                        </div>
+                         <div class="p-4 bg-indigo-50 rounded-lg text-center">
+                            <span class="text-4xl">🎯</span>
+                            <h4 class="font-bold mt-2">트래픽 극대화</h4>
+                            <p class="text-sm text-gray-600">아마존 세션 확보</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Ad Types -->
+            <div class="slide p-12 items-center" relative>
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fqnkc7%2FbtsQFbXhMqV%2FAAAAAAAAAAAAAAAAAAAAALGeDH574rS2rF8jp9Z1J32lGcs6mwuRvT2U0ob6ouC3%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1759244399%26allow_ip%3D%26allow_referer%3D%26signature%3DEYJrtPXYaPL56x6pLdLXC1G4Qes%253D" alt="로고" class="absolute top-2 right-2 h-8 w-auto">
+                <div class="w-full">
+                    <h2 class="text-3xl font-bold text-gray-800 text-center">2. 광고 유형 및 집행 방식</h2>
+                    <div class="mt-8 grid grid-cols-2 gap-8">
+                        <div class="py-6 px-4 border border-gray-200 rounded-lg">
+                            <h3 class="text-xl font-bold text-center">🏢 자사 계정 기반 광고</h3>
+                            <p class="mt-4 text-center text-gray-600">브랜드의 공식 페이스북/인스타그램 계정을 통해<br> 직접 광고를 송출하는 가장 일반적인 방식입니다.</p>
+                            <ul class="mt-8 list-disc list-inside space-y-4">
+                                <li><strong>장점:</strong> 내부 콘텐츠만으로 직접 광고 집행 가능</li>
+                                <li><strong>역할:</strong> 제품 USP 및 공식 프로모션 전달</li>
+                            </ul>
+                        </div>
+                        <div class="py-6 px-4 bg-gray-50 border border-gray-200 rounded-lg">
+                            <h3 class="text-xl font-bold text-center">🧑‍🤝‍🧑 파트너십 광고</h3>
+                            <p class="mt-4 text-center text-gray-600">인플루언서의 계정에 올라온 게시물을 재가공 없이<br> 그대로 광고로 활용하는 방식입니다.</p>
+                             <ul class="mt-4 list-disc list-inside space-y-2">
+                                <li><strong>장점:</strong> 높은 신뢰도와 친숙함, 광고 거부감 최소화</li>
+                                <li><strong>역할:</strong> 실사용 후기 기반의 잠재고객 도달</li>
+                                <li class="font-semibold text-red-500">필수사항: 집행 전 인플루언서 파트너 코드 확보</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 4: Detailed Plan -->
+            <div class="slide p-12 items-center relative">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fqnkc7%2FbtsQFbXhMqV%2FAAAAAAAAAAAAAAAAAAAAALGeDH574rS2rF8jp9Z1J32lGcs6mwuRvT2U0ob6ouC3%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1759244399%26allow_ip%3D%26allow_referer%3D%26signature%3DEYJrtPXYaPL56x6pLdLXC1G4Qes%253D" alt="로고" class="absolute top-2 right-2 h-8 w-auto">
+                <div class="w-full">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">3. 상세 운영 방안</h2>
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-1">
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">캠페인 목표</h3>
+                            <p class="p-4 bg-gray-50 rounded-lg">아마존 세션 확대를 위한 방문자 수 확보 목적의<br>트래픽 캠페인 운영</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">광고 소재</h3>
+                            <p class="p-4 bg-gray-50 rounded-lg">성과가 검증된 고품질 UGC 영상 활용<br>
+                            (초기 20개 → 5~10개 핵심 소재 집중)</p>
+                        </div>
+                        <div class="col-span-2">
+                            <h3 class="font-bold text-lg mb-2">광고 그룹</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="p-4 bg-gray-50 rounded-lg">
+                                    <h4 class="font-bold">🇺🇸 영어 그룹</h4>
+                                    <ul class="list-disc list-inside text-sm mt-2">
+                                        <li>타겟: 미국 내 모든 언어 사용자</li>
+                                        <li>주요 지역: 뉴욕, 캘리포니아, 텍사스</li>
+                                    </ul>
+                                </div>
+                                <div class="p-4 bg-gray-50 rounded-lg">
+                                    <h4 class="font-bold">🇪🇸 스페인어 그룹</h4>
+                                    <ul class="list-disc list-inside text-sm mt-2">
+                                        <li>타겟: 미국 내 스페인어 사용자</li>
+                                        <li>주요 지역: 뉴멕시코, 캘리포니아 등</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <h3 class="font-bold text-lg mb-2">🔗 랜딩 페이지 및 추적</h3>
+                            <p class="p-4 bg-gray-50 rounded-lg">소재에 노출된 제품에 맞춰 아마존 스토어로 연결<br>
+                            (모든 링크에 아마존 어트리뷰션 태그를 적용하여 유입 경로 및 성과 정밀 분석)</p>
+                        </div>
+                    </div> <!-- FIX: This closing div tag was missing -->
+                </div>
+            </div>
+
+            <!-- Slide 5: PBDD Plan -->
+            <div class="slide p-12 bg-[#008dff] text-white relative">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fr7qoy%2FbtsQEdaaOzd%2FAAAAAAAAAAAAAAAAAAAAANZed6tfVuas8hpedRty3RLb7vrANKd3iRRWYA7fUhhs%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1759244399%26allow_ip%3D%26allow_referer%3D%26signature%3Dz7caKiKv%252BKNWgDlOvXK2DkIK55E%253D" alt="로고" class="absolute top-2 right-2 h-8 w-auto">
+                <div class="w-full">
+                    <h2 class="text-3xl font-bold text-center">4. PBDD (10/6~7) 특별 운영 방안</h2>
+                    <p class="mt-2 text-center text-[#C1E3FF]">Prime Big Deal Days 기간, 트래픽을 집중시키기 위한 운영 전략</p>
+                    <div class="mt-8 grid grid-cols-2 gap-x-2 gap-y-4">
+                         <div class="col-span-2">
+                            <h3 class="font-bold text-lg mb-2">소재 전략</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="p-6 bg-[#0067BC] rounded-lg">
+                                    <h4 class="font-bold">UGC 영상 재가공</h4>
+                                    <ul class="list-disc list-inside text-sm mt-2">
+                                        <li>기존 UGC 영상에 PBDD 프로모션 문구 추가</li>
+                                        <li>최우수 퀄리티 영상 10개 정도 사전 선별해 제작</li>
+                                    </ul>
+                                </div>
+                                <div class="p-6 bg-[#0067BC] rounded-lg flex items-center justify-between gap-4">
+                                    <!-- 왼쪽 텍스트 영역 -->
+                                    <div>
+                                        <h4 class="font-bold">이미지 재활용</h4>
+                                        <ul class="list-disc list-inside text-sm mt-2">
+                                            <li>성과가 검증된 이미지 소재를 재활용</li>
+                                            <li>PBDD 관련 문구로 디자인 교체</li>
+                                        </ul>
+                                    </div>
+                                    <!-- 오른쪽 이미지 영역 -->
+                                    <div class="w-1/4 flex-shrink-0">
+                                        <img src="https://tpc.googlesyndication.com/pimgad/14131769294331214876" alt="이미지 예시" class="rounded-md object-cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <h3 class="font-bold text-lg mb-2">예산 집중 운영</h3>
+                            <p class="p-6 bg-[#0067BC] rounded-lg">10월 전체 예산의 20% (약 $661)를 단 이틀간 집중 투입하여,
+                            구매 의사가 가장 높은 기간 동안의 노출을 확보</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 6: Budget -->
+             <div class="slide p-12 items-center relative">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fqnkc7%2FbtsQFbXhMqV%2FAAAAAAAAAAAAAAAAAAAAALGeDH574rS2rF8jp9Z1J32lGcs6mwuRvT2U0ob6ouC3%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1759244399%26allow_ip%3D%26allow_referer%3D%26signature%3DEYJrtPXYaPL56x6pLdLXC1G4Qes%253D" alt="로고" class="absolute top-2 right-2 h-8 w-auto">
+                <div class="w-2/5 pr-8">
+                    <h2 class="text-3xl font-bold text-gray-800">5. 예산 구성 제안</h2>
+                    <p class="mt-4 text-gray-700">10월 예산과 8-9월 비축 예산<br>10월(PBDD), 11월(BF) 50%씩 추가 배정,<br>4분기 성과 극대화 운영 제안</p>
+                    <div class="mt-6 p-4 bg-green-50 rounded-lg">
+                        <h4 class="font-bold text-green-800">10-11월 월 예산</h4>
+                        <p class="text-2xl font-bold text-green-700">$3,307</p>
+                        <p class="text-sm text-green-600">(기본 $2,000 + 추가 $1,307)</p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <h3 class="font-semibold text-center mb-2">초기 예산 배분 (성과 따라 재조정)</h3>
+                    <div class="w-full bg-gray-200 rounded-2xl h-20 flex overflow-hidden">
+                        <div class="bg-blue-600 h-full flex items-center justify-center text-white font-bold" style="width: 75%;">
+                            EN 그룹 (80%)
+                        </div>
+                        <div class="bg-yellow-500 h-full flex items-center justify-center text-black font-bold" style="width: 30%;">
+                            ES 그룹 (20%)
+                        </div>
+                    </div>
+                    <div class="flex justify-between mt-2 text-xl px-2">
+                        <p class="font-bold text-blue-600">$2,646</p>
+                        <p class="font-bold text-yellow-600">$661</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: 마무리 -->
+            <div class="slide flex-col items-center justify-center p-20 bg-gray-50 text-gray-800 text-center">
+                <h1 class="text-5xl font-bold">감사합니다.</h1>
+            </div>
+            
+        </div>
+
+        <!-- Next Button -->
+        <button id="nextBtn" class="p-3 bg-white rounded-full shadow-lg hover:bg-gray-200 transition-colors disabled:opacity-50">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const progressBar = document.createElement('div');
+            progressBar.className = 'slide-progress-bar';
+            document.querySelector('.slide-container').appendChild(progressBar);
+            
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === slides.length - 1;
+                
+                const progressPercentage = ((index + 1) / slides.length) * 100;
+                progressBar.style.width = `${progressPercentage}%`;
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
+
